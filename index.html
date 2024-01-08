@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="w-75 bg-dark text-light mx-auto p-3 rounded-3">
+        <h1 class="text-center">CRUD SYSTEM</h1>
+
+        <div>
+        <label for="productNameInput">product name</label>
+        <input  class="form-control" type="text" id="productNameInput">
+        </div>
+
+        <div>
+        <label for="productPriceInput">price</label>
+        <input  class="form-control" type="number" id="productPriceInput">
+        </div>
+
+        <div>
+        <label for="productCategoryInput">category</label>
+        <input  class="form-control" type="text" id="productCategoryInput">
+        </div>
+
+        <div>
+        <label for="productDescriptionInput">Description</label>
+        <textarea class="form-control"  id="productDescriptionInput"></textarea>
+        </div>
+        <div class="d-flex">
+        <button onclick="addProduct()" class="btn btn-success m-2 w-50 mx-auto" >add product</button>
+        </div>
+
+        <table class="table text-center text-primary">
+            <thead >
+                <tr>
+                    <th class="text-primary">id</th>
+                    <th class="text-primary">name</th>
+                    <th class="text-primary">price</th>
+                    <th class="text-primary">category</th>
+                    <th class="text-primary">description</th>
+                    <th class="text-primary">action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+
+
+
+        </table>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
