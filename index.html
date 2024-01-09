@@ -31,8 +31,10 @@
         <textarea class="form-control"  id="productDescriptionInput"></textarea>
         </div>
         <div class="d-flex">
-        <button onclick="addProduct()" class="btn btn-success m-2 w-50 mx-auto" >add product</button>
+        <button onclick="addProduct()" class="btn btn-success m-2 w-25 mx-auto" id="addBtn">add product</button>
+        <button  class="btn btn-warning m-2 w-25 mx-auto d-none" id="updateBtn" onclick="updateProduct()" >Update product</button>
         </div>
+        <input type="search" id="searchInput" oninput="search()" class="form-control w-50 my-3 mx-auto" placeholder="search by name">
 
         <table class="table text-center text-primary">
             <thead >
